@@ -9,7 +9,7 @@ const app=express();
 dotenv.config({path:"./config/config.env"});
 
 app.use(cors({
-    origin:"https://registationsatya.netlify.app",
+    origin:pocess.env.FRONTED_URL,
     // methods:["POST"],
     credentials:true,
 }))
